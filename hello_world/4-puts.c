@@ -1,2 +1,1 @@
-#!/bin/bash
-puts "Programming is like building a multilingual puzzle" return (0)
+gcc -o 4-puts_0
