@@ -1,1 +1,6 @@
-gcc -o 4-puts_0
+#include <studio.h>
+
+int main () {
+	puts("Programming is like building a multilingual puzzle");
+	return 0;
+}
