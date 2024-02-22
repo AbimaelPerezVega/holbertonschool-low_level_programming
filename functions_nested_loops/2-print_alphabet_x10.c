@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - more alpha
+ * print_alphabet_x10 - more alpha
  *
  * Return: void
 */
