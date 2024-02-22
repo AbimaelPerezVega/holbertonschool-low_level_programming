@@ -14,7 +14,7 @@ for (c = 'a'; c <= 'z'; c++)
 {
 _putchar(c);
 }
-if (i != 9)
+if (i != 10)
 	_putchar('\n');
 }
 }
