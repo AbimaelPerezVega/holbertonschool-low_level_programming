@@ -35,5 +35,5 @@ printf("%d, ", n);
 }
 }
 }
-print("\n");
+printf("\n");
 }
