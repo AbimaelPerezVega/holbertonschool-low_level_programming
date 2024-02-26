@@ -11,7 +11,7 @@ int n;
 for (n = 0; n < 10; n++)
 {
 char c;
-for (c = '0'; c <= "14"; c++)
+for (c = "0"; c <= "14"; c++)
 {
 _putchar(c);
 }
