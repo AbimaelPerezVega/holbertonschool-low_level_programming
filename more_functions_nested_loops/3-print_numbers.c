@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - numbers
- *
+ *@c: the stuff
  *
  *Return: Always 0
 */
