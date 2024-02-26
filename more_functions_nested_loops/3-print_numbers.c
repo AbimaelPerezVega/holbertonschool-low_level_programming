@@ -3,7 +3,7 @@
  * print_numbers - numbers
  *@c: the stuff
  *
- *Return: Always 0
+ *Return: void
 */
 void print_numbers(void)
 {
