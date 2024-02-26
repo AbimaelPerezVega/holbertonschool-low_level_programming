@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ * print_line - making the line
+ *@n: making line
+ *Return: void
 */
 void print_line(int n)
 {
