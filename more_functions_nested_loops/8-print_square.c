@@ -3,7 +3,6 @@
  * print_square - making a square with hashtags
  *@size: creating a hashtag square
  *Return: empty
- *
 */
 void print_square(int size)
 {
@@ -16,7 +15,7 @@ else
 {
 for (q = 0; q < size; q++)
 {
-for (t = 0; t < q; t++)
+for (t = 0; t < size; t++)
 {
 _putchar(35);
 }
