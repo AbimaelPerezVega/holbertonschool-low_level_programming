@@ -5,7 +5,7 @@
  *
  *Return: 0
 */
-int main()
+int main(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
@@ -16,7 +16,7 @@ printf("FizzBuzz");
 }
 else if (i % 3 == 0)
 {
-printf ("Fizz");
+printf("Fizz");
 }
 else if (i % 5 == 0)
 {
@@ -27,9 +27,9 @@ printf("Buzz");
 
 printf("%d", i);
 }
-if (i < 100) 
+if (i < 100)
 {
-printf (" ");
+printf(" ");
 }
 }
 printf("\n");
