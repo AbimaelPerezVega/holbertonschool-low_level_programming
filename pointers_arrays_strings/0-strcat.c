@@ -8,18 +8,18 @@
 */
 char *_strcat(char *dest, char *src)
 {
-int d = 0, q;
+int dlen = 0, q;
 
-while (dest[d])}
+while (dest[dlen])}
 {
-d++;
+dlen++;
 }
 
 for (q = 0; src[q] != 0; q++)
-	{
-	dest[d] = src[q];
-	d++;
-	}
-dest[d] = '\0';
-return(dest);
+{
+dest[dlen] = src[q];
+dlen++;
+}
+dest[dlen] = '\0';
+return (dest);
 }
