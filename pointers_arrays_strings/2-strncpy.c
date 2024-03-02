@@ -6,7 +6,8 @@ include "main.h"
  *@n: the number of bytes to copy from the source
  *Return: returning to dest
 */
-char *strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
+
 {
 
 	int index = 0, slen = 0;
