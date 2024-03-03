@@ -3,19 +3,18 @@
 #include <ctype.h>
 /**
  * string_toupper - making the lowercases upper
- *@ch: the string to upper
+ *@s: the string to upper
  *
  *Return: 0
 */
-char *string_toupper(char *ch)
+char *string_toupper(char *)
 {
-int b = 0;
+char * s = str;
 
-while (str[b])
+while (*s)
 {
-ch = str[b];
-_putchar(toupper(ch));
-b++;
+*s = (*s > 'a' && *s <= 'z') ? *s-32 : *s;
+s++;
 }
 return (0);
 }
