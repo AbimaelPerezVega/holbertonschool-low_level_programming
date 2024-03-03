@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *leet - encodes a string into 1337
- *@s: string to be encoded
+ *@l: string to be encoded
  *Return: back to s
 */
 char *leet(char *l)
@@ -20,5 +20,5 @@ l[c] = ds[d];
 }
 }
 }
-return (s);
+return (l);
 }
