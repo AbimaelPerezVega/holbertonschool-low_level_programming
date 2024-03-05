@@ -15,12 +15,12 @@ while (*s != '\0') {
 
 	while (*accept != '\0') {
 		if (*s == *accept) {
-			found = 1;
+			f = 1;
 			break;
 		}
-		accept++
+		accept++;
 	}
-	if (!found) {
+	if (!f) {
 		break;
 	}
 	count++;
