@@ -21,7 +21,7 @@ temp_needle++;
 }
 if (*temp_needle == '\0')
 {
-return haystack;
+return (haystack);
 }
 haystack++;
 }
