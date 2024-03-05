@@ -4,14 +4,12 @@
  *@s: searching the string
  *@c: the location
  *Return: null
- *
 */
 char *_strchr(char *s, char c)
 {
-	do {
+do {
 if (*s == c)
-	return (s);
-	} while (*s++);
-
+return (s);
+} while (*s++);
 return ('\0');
 }
