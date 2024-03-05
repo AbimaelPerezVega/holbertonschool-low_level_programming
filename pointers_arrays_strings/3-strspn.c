@@ -11,17 +11,20 @@ unsigned int count = 0;
 int f;
 char *original_accept = accept;
 
-while (*s != '\0') {
+while (*s != '\0')
+{
 	f = 0;
-
-	while (*accept != '\0') {
-		if (*s == *accept) {
+	while (*accept != '\0')
+	{
+		if (*s == *accept)
+		{
 			f = 1;
 			break;
 		}
 		accept++;
 	}
-	if (!f) {
+	if (!f)
+	{
 		break;
 	}
 	count++;
