@@ -14,7 +14,7 @@ while (*haystack != '\0')
 char *temp_haystack = haystack;
 char *temp_needle = needle;
 
-while (*temp_needle != '\0' && temp_haystack == *temp_needle)
+while (*temp_needle != '\0' && *temp_haystack == *temp_needle)
 {
 temp_haystack++;
 temp_needle++;
