@@ -11,7 +11,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-int a = 0, e = 0, i = 0, o = 0, j;
+int a = 0, e = 0, i, o = 0, j;
 char *s;
 
 if (s1 == NULL)
@@ -33,10 +33,10 @@ if (s == NULL)
 	return (NULL);
 
 for (i = 0; i < a; i++)
-     s[i] = s1[i];
+s[i] = s1[i];
 
 for (j = 0; j < e; j++)
-      s[a + j] = s2[j];
+s[a + j] = s2[j];
 s[a + e] = '\0';
 return (s);
 }
