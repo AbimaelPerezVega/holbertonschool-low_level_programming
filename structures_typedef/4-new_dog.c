@@ -57,12 +57,12 @@ return (NULL);
 */
 int _strlen(char *s)
 {
-int c = 0;
-for (; *s != '\0'; s++)
+int length = 0;
+while (*s != '\0')
 {
-c++;
+s++;
 }
-return (c);
+return (length);
 }
 /**
  *_strcpy - copy a string
