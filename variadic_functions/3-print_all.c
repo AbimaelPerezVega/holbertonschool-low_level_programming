@@ -4,7 +4,7 @@
 /**
  *print_all - pirnts all the stuff
  *
- *
+ *@format: this format action
  *
  *
 */
@@ -15,7 +15,7 @@ unsigned int i = 0;
 char *separator = "";
 char *str;
 
-va_start (args , format);
+va_start(args, format);
 
 while (format && format[i])
 {
