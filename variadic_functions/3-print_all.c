@@ -15,7 +15,7 @@ unsigned int i = 0;
 char *separator = "";
 char *str;
 
-va_start(args , format);
+va_start (args , format);
 
 while (format && format[i])
 {
@@ -32,7 +32,7 @@ case 'f':
 	break;
 case 's':
 	str = va_arg(args, char *);
-	printf ("%s%s", separator, (str == NULL) ? "(nil)" : str);
+	printf("%s%s", separator, (str == NULL) ? "(nil)" : str);
 	break;
 default:
 	i++;
