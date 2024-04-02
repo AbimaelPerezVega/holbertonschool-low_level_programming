@@ -1,6 +1,23 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <string.h>
+
+/**
+ *str_length - calculate the length
+ *@str: string
+ *
+ *Return: length of the string
+ *
+ *
+*/
+size_t str_length(const char *str)
+{
+size_t length = 0;
+while (str[length] != '\0')
+	length++;
+return (length);
+}
+
 /**
  *add_node - adds a new mode at the beginning of a list_t list
  *@head: pointer to a pointer
@@ -26,7 +43,7 @@ free(new_node);
 return (NULL);
 }
 
-new_node->len = strlen(str);
+new_node->len = str_length(str);
 new_node->next = *head;
 *head = new_node;
 
