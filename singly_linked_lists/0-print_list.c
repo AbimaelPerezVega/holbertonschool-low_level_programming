@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+#include <stddef.h>
 /**
  *print_list - printing the elements
  *@h: pointer to the head
@@ -12,21 +13,16 @@ size_t print_list(const list_t *h)
 size_t count = 0;
 const list_t *current = h;
 
-printf("[");
 while (current != NULL)
 {
-if (current->str != NULL)
-	printf("%s", current->str);
+if (current->str == NULL)
+printf("[0] (nil)\n");
 else
-	printf("(nil)");
+printf("[%d] %s\n", current->len, current->str);
 
-count++;
 current = current->next;
-
-if (current != NULL)
-	printf(", ");
+count++;
 }
-printf("]\n");
 
 return (count);
 }
