@@ -2,6 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ *str_length - calculate the length
+ *@str: string
+ *Return: length of the string
+*/
+size_t str_length(const char *str)
+{
+size_t length = 0;
+while (str[length] != '\0')
+	length++;
+return (length);
+}
+
+/**
  *add_node_end - adds a new node at the end of a list_t list
  *@head: pointer to a pointer to the head
  *@str: string to be added to the new node
@@ -27,7 +40,7 @@ if (new_node->str == NULL)
 free(new_node);
 return (NULL);
 }
-new_node->len = strlen(str);
+new_node->len = str_length(str);
 new_node->next = NULL;
 
 if (*head == NULL)
