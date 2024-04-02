@@ -13,7 +13,7 @@ size_t count = 0;
 const list_t *current = h;
 
 printf("[");
-while (current->str != NULL)
+while (current != NULL)
 {
 if (current->str != NULL)
 	printf("%s", current->str);
