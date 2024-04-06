@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include "main.h"
 /**
  *append_text_to_file - crates a file and puts text
  *@filename: name for file
