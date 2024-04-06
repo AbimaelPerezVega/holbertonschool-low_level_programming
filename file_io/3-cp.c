@@ -44,7 +44,7 @@ return (99);
  *read_err - error handler
  *@fd1: first descriptor
  *@fd2: second
- *filename: error
+ *@filename: error
  *Return: 98
 */
 int read_err(int fd1, int fd2, char *filename)
@@ -90,16 +90,14 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 close_errchk(file_from);
 return (99);
 }
-do
-{
+do {
 lenr = read(file_from, buf, 1024);
 if (lenr == -1)
 return (read_err(file_from, file_to, av[1]));
 lenw = write(file_to, buf, lenr);
 if (lenw == -1 || lenw != lenr)
 return (write_err(file_from, file_to, av[2]));
-}
-while (lenr == 1024);
+} while (lenr == 1024);
 err = close_errchk(file_from);
 err += close_errchk(file_to);
 if (err != 0)
